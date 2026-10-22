@@ -2,7 +2,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - 'readme.md'
+      - 'blacky.md'
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - name: awesome-lint
+      - name: blacky-lint
         run: ./.github/workflows/repo_linter.sh
